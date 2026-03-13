@@ -1,15 +1,22 @@
 # DI-CD-Net
 Assembly error detection in printed circuit board assembly (PCBA) is critical to ensuring the quality and reliability of industrial production lines. However, detecting subtle assembly errors in PCBA images remains a significant challenge due to complex layouts and fine-grained component structures. To address this, we propose DI-CD (Dynamic Interaction–Driven Change Detection) Net, a task-specific change detection framework with dynamic interaction, inspired by the way humans compare images to identify abnormal assembly patterns. DI-CD Net introduces the Self-Attention-Cross-Attention Guided Interaction (SA-CAGI) module to dynamically model both cross-image and intra-image feature dependencies. A refinement module leverages semantic-rich deep features to guide the enhancement of noisy shallow features, while a Multi-Scale Densely Connected Feature Pyramid Network(MSDC-FPN) enables adaptive multi-scale feature fusion for robust representation learning. By simply switching the task head, DI-CD Net can flexibly adapt to both object-level and pixel-level change detection tasks. To support research on PCBA assembly error detection, we also construct PCBA-CD, a high-resolution change detection dataset comprising 5,905 image pairs from nine real-world circuit boards. Extensive experiments demonstrate that DI-CD Net achieves state-of-the-art performance in object-level change detection on PCBA-CD, AICD, and LEVIR, while also exhibiting strong generalization capabilities in pixel-level change detection on LEVIR and CDD-CD. Furthermore, we explore the method’s potential under limited supervision by conducting k-shot and comparison experiments on the MVTec AD benchmark, confirming its effectiveness in semi-supervised anomaly detection scenarios.
+
 ![image](https://github.com/Orange1105921991/DI-CD-Net/blob/main/imgs/structure.jpg)
 Figure 2: Overall architecture of the proposed CD framework. (a) Encoder of DI-CD network structure (b) Object-level Decoder of DI-CD network structure (c) Pixel-level Decoder of DI-CD network structure
+
 ![image](https://github.com/Orange1105921991/DI-CD-Net/blob/main/imgs/AOI-CD.jpg)
 Figure 6: Visual inspection results on PCBA-CD dataset, (red box indicates missed detection, yellow box indicates false detection)
+
 ![image](https://github.com/Orange1105921991/DI-CD-Net/blob/main/imgs/Levir-OCD.jpg)
 Figure 7: Visual inspection results on LEVIR-CD test set
+
 ![image](https://github.com/Orange1105921991/DI-CD-Net/blob/main/imgs/Levir-PCD.jpg)
 Figure 9: Qualitative comparison on the LEVIR-CD dataset
+
 ![image](https://github.com/Orange1105921991/DI-CD-Net/blob/main/imgs/CDD-CD.jpg)
 Figure 10: Qualitative comparison on the CDD-CD dataset
+
 # Installation
 python 3.8
+
 pytorch 1.9.0
