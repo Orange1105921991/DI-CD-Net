@@ -2,8 +2,8 @@
 Assembly error detection in printed circuit board assembly (PCBA) is critical
 to ensuring the quality and reliability of industrial production lines. However, detecting subtle assembly errors in PCBA images remains a significant
 challenge due to complex layouts and fine-grained component structures. To
-address this, we propose DI-CD (Dynamic Interaction–Driven Change Detection) Net, a task-specific change detection framework with dynamic interaction, inspired by the way humans compare images to identify abnormal assembly patterns. DI-CD Net introduces the Self-Attention-Cross-Attention
-Guided Interaction (SA-CAGI) module to dynamically model both crossimage and intra-image feature dependencies. A refinement module leverages semantic-rich deep features to guide the enhancement of noisy shallow
+address this, we propose DI-CD (Dynamic Interaction–Driven Change Detection) Net, a task-specific change detection framework with dynamic interaction, inspired by the way humans compare images to identify abnormal assembly patterns. DI-CD Net introduces the Self-Attention-Cross-Attention
+Guided Interaction (SA-CAGI) module to dynamically model both cross-image and intra-image feature dependencies. A refinement module leverages semantic-rich deep features to guide the enhancement of noisy shallow
 features, while a Multi-Scale Densely Connected Feature Pyramid Network
 (MSDC-FPN) enables adaptive multi-scale feature fusion for robust representation learning. By simply switching the task head, DI-CD Net can flexibly
 adapt to both object-level and pixel-level change detection tasks. To support
@@ -12,4 +12,4 @@ high-resolution change detection dataset comprising 5,905 image pairs from
 nine real-world circuit boards. Extensive experiments demonstrate that DICD Net achieves state-of-the-art performance in object-level change detection
 on PCBA-CD, AICD, and LEVIR, while also exhibiting strong generalization capabilities in pixel-level change detection on LEVIR and CDD-CD.
 Furthermore, we explore the method’s potential under limited supervision
-by conducting k-shot and comparison experiments on the MVTec AD benchmark, confirming its effectiveness in semi-supervised anomaly detection scenarios.
+by conducting k-shot and comparison experiments on the MVTec AD benchmark, confirming its effectiveness in semi-supervised anomaly detection scenarios.
